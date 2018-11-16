@@ -1,0 +1,7 @@
+﻿---
+- name: Zákaz updatování
+  hosts: "{{ seznam_stanic }}"
+
+  tasks: 
+   - name: Zakáže updaty
+     win_command: "{{ command }}"
