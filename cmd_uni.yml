@@ -1,7 +1,7 @@
 ﻿---
-- name: Zákaz updatování
+- name: Univerzální příkaz
   hosts: "{{ seznam_stanic }}"
 
   tasks: 
-   - name: Zakáže updaty
+   - name: cmd
      win_command: "{{ command }}"
